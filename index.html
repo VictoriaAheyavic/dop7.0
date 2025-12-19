@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Агеявич Виктория</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrepper">
+  <header class="container">
+    <span class="logo">vVv</span>
+    <nav>
+      <ul id="menu">
+        <li class="home"><a href="#home">Главная</a></li>
+        <li><a href="#achievements">Достижения</a></li>
+        <li><a href="#mini">Навыки</a></li>
+        <li class="btn"><a href="#contacts">Контакты</a></li>
+      </ul>
+      <div class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <div id="home" class="hero container">
+    <div class="hero--info">
+      <h1>Агеявич Виктория</h1>
+      <p>Привет! Я студентка Академии управления специальности УИР и просто классная девчонка. Здесь ты найдешь краткую информацию обо мне.</p>
+      <button class="btn">Узнать больше</button>
+    </div>
+    <img src="vika.PNG" alt="Викуля">
+  </div>
+</div>
+
+<section id="achievements" class="achievements1">
+  <div class="block">
+    <img src="sp.jpg" alt="">
+    <div class="text">
+      <span>Служба протокола</span>
+      <p>В октябре 2025 года я стала руководителем Службы протокола в Первичной организации ОО "БРСМ".</p>
+    </div>
+  </div>
+</section>
+
+<section class="achievements2">
+  <div class="block">
+    <img src="ekb.jpg" alt="">
+    <div class="text">
+      <span>Летний университет</span>
+      <p>Летом 2025 года я участвовала в международном проекте "Летний университет" на базе УрФУ в Екатеринбурге.</p>
+    </div>
+  </div>
+</section>
+
+<section class="achievements3">
+  <div class="block">
+    <img src="olimp.jpg" alt="">
+    <div class="text">
+      <span>Олимпиада</span>
+      <p>В 11 классе я получила диплом 3 степени на заключительном этапе республиканской олимпиады по белорусскому языку и литературе.</p>
+    </div>
+  </div>
+</section>
+
+<div id="mini" class="skills">
+  <h2>Мои навыки и способности</h2>
+      <div class="row1">
+      <div class = "boxik">
+      <img src="1.png" alt="">
+      <p>Что-то напишу на языках программирования С/С++</p>
+    </div>
+    <div class = "boxik">
+      <img src="2.png" alt="">
+      <p>Сделаю прикольный сайтик</p>
+    </div>
+    <div class = "boxik">
+      <img src="3.png" alt="">
+      <p>Сгруппирую грамотно информацию в базу данных</p>
+    </div>
+    </div>
+    
+    <div class="row2"> 
+      <div class = "boxik">
+      <img src="4.png" alt="">
+      <p>Напишу отзыв о литературном произведении</p>
+    </div>
+    <div class = "boxik">
+      <img src="5.png" alt="">
+      <p>Регулярно буду скидывать тик-токи</p>
+    </div>
+    <div class = "boxik">
+      <img src="6.png" alt="">
+      <p>Приготовлю много вкусненького</p>
+    </div>
+    </div>
+</div>
+<hr>
+<footer id="contacts" class="footer">
+  <div class="container">
+    <div class="footer-info">
+      <h3>Контакты</h3>
+      <p>📧 Email: viktoriaageavic@gmail.com</p>
+      <p>📞 Телефон: +375 (44) 735-35-75</p>
+      <p>📍 Минск, Беларусь</p>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://t.me/victoriaageyavich" target="_blank">Telegram</a>
+      <a href="https://www.instagram.com/victoriaageyavich?igsh=bG9rNjkxOXkzMm12&utm_source=qr" target="_blank">Instagram</a>
+      <a href="https://vk.com/viktiriya2014" target="_blank">VK</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const burger = document.getElementById('burger');
+  const menu = document.getElementById('menu');
+
+  burger.addEventListener('click', () => {
+    menu.classList.toggle('active');   // переключаем класс меню
+    burger.classList.toggle('open');   // анимация самого бургера
+  });
+
+  // Дополнительно: закрывать меню при клике на ссылку
+  const links = document.querySelectorAll('#menu a');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('active');
+      burger.classList.remove('open');
+    });
+  });
+</script>
+</body> 
+</html>
